@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'search' => 'Cerca',
+    'search'  => 'Cerca',
     'rebuild' => 'Ricostruisci',
 ];

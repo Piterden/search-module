@@ -10,7 +10,6 @@ use Mmanos\Search\Search;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Table\Action
  */
 class Delete extends ActionHandler
 {
@@ -19,7 +18,7 @@ class Delete extends ActionHandler
      * Delete the selected entries.
      *
      * @param Search|Search $search
-     * @param array        $selected
+     * @param array         $selected
      */
     public function handle(Search $search, array $selected)
     {

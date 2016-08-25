@@ -10,7 +10,6 @@ use Anomaly\SearchModule\Search\SearchPresenter;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Table
  */
 class SearchTableColumns
 {
@@ -26,11 +25,11 @@ class SearchTableColumns
             [
                 [
                     'heading' => 'module::field.title.name',
-                    'value'   => 'entry.title'
+                    'value'   => 'entry.title',
                 ],
                 [
                     'heading' => 'module::field.description.name',
-                    'value'   => 'entry.description'
+                    'value'   => 'entry.description',
                 ],
                 [
                     'heading' => 'module::field.keywords.name',
@@ -48,7 +47,7 @@ class SearchTableColumns
                                 $item->getKeywords()
                             )
                         );
-                    }
+                    },
                 ],
                 [
                     'heading' => 'module::field.stream.name',
@@ -59,8 +58,8 @@ class SearchTableColumns
 
                         return trans($item->getStreamName()) . ' <small class="text-muted">[' . $item->getStreamNamespace(
                         ) . ']</small>';
-                    }
-                ]
+                    },
+                ],
             ]
         );
     }

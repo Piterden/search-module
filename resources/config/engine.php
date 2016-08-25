@@ -42,22 +42,22 @@ return [
     'connections'   => [
         'zend'          => [
             'driver' => 'zend',
-            'path'   => 'storage::search/zend'
+            'path'   => 'storage::search/zend',
         ],
         'elasticsearch' => [
             'driver' => 'elasticsearch',
             'config' => [
                 'hosts' => [
-                    'localhost:9200'
-                ]
-            ]
+                    'localhost:9200',
+                ],
+            ],
         ],
         'algolia'       => [
             'driver' => 'algolia',
             'config' => [
                 'application_id' => '',
-                'admin_api_key'  => ''
-            ]
-        ]
-    ]
+                'admin_api_key'  => '',
+            ],
+        ],
+    ],
 ];

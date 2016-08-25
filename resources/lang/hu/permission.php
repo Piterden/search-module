@@ -3,10 +3,10 @@
 return [
     'index' => [
         'name' => 'Keresés Index',
-    'option' => [
+    'option'   => [
         'read' => 'Hozzáférhet a keresés indexhez?',
-    'delete' => 'Törölhet index bejegyzést?',
-    'rebuild' => 'Újraépíthet keresés indexet?',
+    'delete'   => 'Törölhet index bejegyzést?',
+    'rebuild'  => 'Újraépíthet keresés indexet?',
     ],
     ],
 ];

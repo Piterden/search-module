@@ -3,7 +3,7 @@
 use Anomaly\SearchModule\Search\Index\IndexHandler;
 use Anomaly\SearchModule\Search\Index\IndexManager;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
-use Illuminate\Contracts\Bus\SelfHandling;
+
 
 /**
  * Class DeleteEntry
@@ -11,9 +11,8 @@ use Illuminate\Contracts\Bus\SelfHandling;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Index\Command
  */
-class DeleteEntry implements SelfHandling
+class DeleteEntry
 {
 
     /**

@@ -9,7 +9,6 @@ use Anomaly\Streams\Platform\Http\Controller\AdminController;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Http\Controller\Admin
  */
 class SearchController extends AdminController
 {
@@ -17,7 +16,7 @@ class SearchController extends AdminController
     /**
      * Return the index.
      *
-     * @param SearchTableBuilder $table
+     * @param  SearchTableBuilder                         $table
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function index(SearchTableBuilder $table)

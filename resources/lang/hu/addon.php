@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'Keresés',
-    'name' => 'Keresés Modul',
+    'title'       => 'Keresés',
+    'name'        => 'Keresés Modul',
     'description' => 'Összetett keresés modul',
-    'section' => [
+    'section'     => [
         'index' => 'Keresés Index',
     ],
 ];

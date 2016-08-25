@@ -10,7 +10,6 @@ use Anomaly\Streams\Platform\Support\Value;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Index
  */
 class IndexInput
 {
@@ -32,7 +31,7 @@ class IndexInput
     /**
      * Create a new IndexInput instance.
      *
-     * @param Value $value
+     * @param Value     $value
      * @param Evaluator $evaluator
      */
     public function __construct(Value $value, Evaluator $evaluator)
@@ -44,8 +43,8 @@ class IndexInput
     /**
      * Handle the index process.
      *
-     * @param EntryInterface $entry
-     * @param                $config
+     * @param  EntryInterface $entry
+     * @param                 $config
      * @return array
      */
     public function read(EntryInterface $entry, $config)

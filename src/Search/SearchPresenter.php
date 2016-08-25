@@ -10,7 +10,6 @@ use Illuminate\Contracts\Support\Arrayable;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search
  */
 class SearchPresenter extends Presenter implements Arrayable
 {

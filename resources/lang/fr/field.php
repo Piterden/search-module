@@ -2,18 +2,18 @@
 
 return [
     'term'        => [
-        'placeholder' => 'Recherche...'
+        'placeholder' => 'Recherche...',
     ],
     'title'       => [
-        'name' => 'Titre'
+        'name' => 'Titre',
     ],
     'description' => [
-        'name' => 'Description'
+        'name' => 'Description',
     ],
     'keywords'    => [
-        'name' => 'Mots-clés'
+        'name' => 'Mots-clés',
     ],
     'stream'  => [
-        'name' => 'Stream'
-    ]
+        'name' => 'Stream',
+    ],
 ];

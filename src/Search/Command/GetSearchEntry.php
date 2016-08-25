@@ -2,7 +2,6 @@
 
 use Anomaly\SearchModule\Search\Contract\SearchItemInterface;
 use Anomaly\Streams\Platform\Model\EloquentModel;
-use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -12,9 +11,8 @@ use Illuminate\Database\Eloquent\Builder;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Command
  */
-class GetSearchEntry implements SelfHandling
+class GetSearchEntry
 {
 
     /**
@@ -37,7 +35,7 @@ class GetSearchEntry implements SelfHandling
     /**
      * Handle the command.
      *
-     * @param Container $container
+     * @param  Container                                                                         $container
      * @return \Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model|null
      */
     public function handle(Container $container)

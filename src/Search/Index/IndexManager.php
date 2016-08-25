@@ -13,7 +13,6 @@ use Mmanos\Search\Search;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Index
  */
 class IndexManager
 {

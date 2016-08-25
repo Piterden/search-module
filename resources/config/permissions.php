@@ -4,6 +4,6 @@ return [
     'index' => [
         'read',
         'delete',
-        'rebuild'
-    ]
+        'rebuild',
+    ],
 ];

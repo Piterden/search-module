@@ -11,7 +11,6 @@ use Illuminate\Filesystem\Filesystem;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule
  */
 class SearchModule extends Module
 {
@@ -37,7 +36,7 @@ class SearchModule extends Module
                     'text' => 'module::button.rebuild'
                 ]
             ]*/
-        ]
+        ],
     ];
 
     /**

@@ -9,7 +9,6 @@ use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Contract
  */
 interface SearchItemInterface
 {

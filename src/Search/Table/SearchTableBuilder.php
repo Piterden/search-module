@@ -8,7 +8,6 @@ use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Table
  */
 class SearchTableBuilder extends TableBuilder
 {
@@ -21,8 +20,8 @@ class SearchTableBuilder extends TableBuilder
     protected $filters = [
         'term' => [
             'filter'      => 'input',
-            'placeholder' => 'module::field.term.placeholder'
-        ]
+            'placeholder' => 'module::field.term.placeholder',
+        ],
     ];
 
     /**
@@ -32,8 +31,8 @@ class SearchTableBuilder extends TableBuilder
      */
     protected $actions = [
         'delete' => [
-            'handler' => 'Anomaly\SearchModule\Search\Table\Action\Delete'
-        ]
+            'handler' => 'Anomaly\SearchModule\Search\Table\Action\Delete',
+        ],
     ];
 
     /**
@@ -43,12 +42,12 @@ class SearchTableBuilder extends TableBuilder
      */
     protected $buttons = [
         'edit' => [
-            'href' => '{entry.edit_path}'
+            'href' => '{entry.edit_path}',
         ],
         'view' => [
             'href'   => '{entry.view_path}',
-            'target' => '_blank'
-        ]
+            'target' => '_blank',
+        ],
     ];
 
     /**
@@ -60,8 +59,8 @@ class SearchTableBuilder extends TableBuilder
         'table_view' => 'module::admin/search/table',
         'filters'    => [
             'filter_icon' => 'search',
-            'filter_text' => 'module::button.search'
-        ]
+            'filter_text' => 'module::button.search',
+        ],
     ];
 
 }

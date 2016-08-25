@@ -7,7 +7,6 @@ use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Support\Decorator;
-use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Http\Request;
@@ -21,9 +20,8 @@ use Mmanos\Search\Search;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Command
  */
-class GetSearchResults implements SelfHandling
+class GetSearchResults
 {
 
     /**
@@ -46,12 +44,12 @@ class GetSearchResults implements SelfHandling
     /**
      * Handle the command.
      *
-     * @param ModuleCollection $modules
-     * @param Decorator        $decorator
-     * @param Repository       $config
-     * @param Container        $container
-     * @param Request          $request
-     * @param Search           $search
+     * @param  ModuleCollection     $modules
+     * @param  Decorator            $decorator
+     * @param  Repository           $config
+     * @param  Container            $container
+     * @param  Request              $request
+     * @param  Search               $search
      * @return LengthAwarePaginator
      */
     public function handle(

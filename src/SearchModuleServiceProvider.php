@@ -10,7 +10,6 @@ use Illuminate\Contracts\Config\Repository;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule
  */
 class SearchModuleServiceProvider extends AddonServiceProvider
 {
@@ -21,7 +20,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $providers = [
-        'Mmanos\Search\SearchServiceProvider'
+        'Mmanos\Search\SearchServiceProvider',
     ];
 
     /**
@@ -30,7 +29,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $plugins = [
-        'Anomaly\SearchModule\SearchModulePlugin'
+        'Anomaly\SearchModule\SearchModulePlugin',
     ];
 
     /**
@@ -40,7 +39,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      */
     protected $commands = [
         'Anomaly\SearchModule\Search\Console\Destroy',
-        'Anomaly\SearchModule\Search\Console\Rebuild'
+        'Anomaly\SearchModule\Search\Console\Rebuild',
     ];
 
     /**
@@ -50,11 +49,11 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      */
     protected $listeners = [
         'Anomaly\Streams\Platform\Entry\Event\EntryWasSaved'   => [
-            'Anomaly\SearchModule\Search\Listener\InsertItem'
+            'Anomaly\SearchModule\Search\Listener\InsertItem',
         ],
         'Anomaly\Streams\Platform\Entry\Event\EntryWasDeleted' => [
-            'Anomaly\SearchModule\Search\Listener\DeleteItem'
-        ]
+            'Anomaly\SearchModule\Search\Listener\DeleteItem',
+        ],
     ];
 
     /**
@@ -64,7 +63,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      */
     protected $routes = [
         'admin/search'         => 'Anomaly\SearchModule\Http\Controller\Admin\SearchController@index',
-        'admin/search/rebuild' => 'Anomaly\SearchModule\Http\Controller\Admin\SearchController@rebuild'
+        'admin/search/rebuild' => 'Anomaly\SearchModule\Http\Controller\Admin\SearchController@rebuild',
     ];
 
     /**

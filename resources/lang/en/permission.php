@@ -2,11 +2,11 @@
 
 return [
     'index' => [
-        'name'  => 'Search Index',
+        'name'   => 'Search Index',
         'option' => [
             'read'    => 'Can access search index?',
             'delete'  => 'Can delete index entries?',
-            'rebuild' => 'Can rebuild search index?'
-        ]
-    ]
+            'rebuild' => 'Can rebuild search index?',
+        ],
+    ],
 ];

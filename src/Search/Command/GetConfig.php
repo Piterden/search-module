@@ -3,7 +3,6 @@
 use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
-use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Contracts\Config\Repository;
 
 /**
@@ -12,9 +11,8 @@ use Illuminate\Contracts\Config\Repository;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Command
  */
-class GetConfig implements SelfHandling
+class GetConfig
 {
 
     /**
@@ -37,8 +35,8 @@ class GetConfig implements SelfHandling
     /**
      * Handle the command.
      *
-     * @param ModuleCollection $modules
-     * @param Repository       $config
+     * @param  ModuleCollection $modules
+     * @param  Repository       $config
      * @return mixed|null
      */
     public function handle(ModuleCollection $modules, Repository $config)

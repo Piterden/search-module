@@ -17,7 +17,6 @@ use Symfony\Component\Console\Input\InputArgument;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search\Console
  */
 class Rebuild extends Command
 {
@@ -69,7 +68,7 @@ class Rebuild extends Command
         /* @var EntryModel $model */
         $repository->setModel($model = $stream->getEntryModel());
 
-        /**
+        /*
          * If the stream is empty we can't
          * really index it.
          */
@@ -77,7 +76,7 @@ class Rebuild extends Command
             $this->error('Stream [' . $this->argument('stream') . '] is empty.');
         }
 
-        /**
+        /*
          * If the stream does not have a valid
          * search configuration then we don't
          * know how to insert it's entries.
@@ -112,7 +111,7 @@ class Rebuild extends Command
     protected function getArguments()
     {
         return [
-            ['stream', InputArgument::REQUIRED, 'The stream to rebuild: i.e. pages.pages']
+            ['stream', InputArgument::REQUIRED, 'The stream to rebuild: i.e. pages.pages'],
         ];
     }
 }

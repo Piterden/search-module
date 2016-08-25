@@ -8,7 +8,6 @@ use Anomaly\Streams\Platform\Addon\Plugin\PluginCriteria;
  * @link          http://pyrocms.com/
  * @author        PyroCMS, Inc. <support@pyrocms.com>
  * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule\Search
  */
 class SearchCriteria extends PluginCriteria
 {
