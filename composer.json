@@ -1,11 +1,11 @@
 {
     "name": "anomaly/search-module",
     "type": "streams-addon",
-    "description": "A powerful search index for the Streams Platform.",
+    "description": "A search utility for the Streams Platform.",
     "keywords": [
+        "pryocms",
         "module",
-        "search",
-        "module"
+        "search"
     ],
     "homepage": "http://pyrocms.com/",
     "license": "MIT",
@@ -18,20 +18,11 @@
         }
     ],
     "support": {
-        "email": "support@anomaly.is"
+        "email": "support@pyrocms.com"
     },
     "autoload": {
         "psr-4": {
-            "Anomaly\\SearchModule\\": "src/",
-            "Zend\\Stdlib\\": "vendor/zendframework/zend-stdlib/src/",
-            "Elasticsearch\\": "vendor/elasticsearch/elasticsearch/src/Elasticsearch/"
-        },
-        "psr-0": {
-            "Mmanos\\Search\\": "vendor/mmanos/laravel-search/src/",
-            "ZendSearch": "vendor/zendframework/zendsearch/library/"
-        },
-        "classmap": [
-            "vendor/algolia/algoliasearch-client-php/algoliasearch.php"
-        ]
+            "Anomaly\\SearchModule\\": "src/"
+        }
     }
 }

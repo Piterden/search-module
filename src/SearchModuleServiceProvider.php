@@ -4,25 +4,8 @@ use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 use Anomaly\Streams\Platform\Application\Application;
 use Illuminate\Contracts\Config\Repository;
 
-/**
- * Class SearchModuleServiceProvider
- *
- * @link          http://pyrocms.com/
- * @author        PyroCMS, Inc. <support@pyrocms.com>
- * @author        Ryan Thompson <ryan@pyrocms.com>
- * @package       Anomaly\SearchModule
- */
 class SearchModuleServiceProvider extends AddonServiceProvider
 {
-
-    /**
-     * Additional addon providers.
-     *
-     * @var array
-     */
-    protected $providers = [
-        'Mmanos\Search\SearchServiceProvider'
-    ];
 
     /**
      * The addon plugins.
@@ -30,7 +13,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $plugins = [
-        'Anomaly\SearchModule\SearchModulePlugin'
+        'Anomaly\SearchModule\SearchModulePlugin',
     ];
 
     /**
@@ -40,7 +23,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      */
     protected $commands = [
         'Anomaly\SearchModule\Search\Console\Destroy',
-        'Anomaly\SearchModule\Search\Console\Rebuild'
+        'Anomaly\SearchModule\Search\Console\Rebuild',
     ];
 
     /**
@@ -48,14 +31,14 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      *
      * @var array
      */
-    protected $listeners = [
-        'Anomaly\Streams\Platform\Entry\Event\EntryWasSaved'   => [
-            'Anomaly\SearchModule\Search\Listener\InsertItem'
-        ],
-        'Anomaly\Streams\Platform\Entry\Event\EntryWasDeleted' => [
-            'Anomaly\SearchModule\Search\Listener\DeleteItem'
-        ]
-    ];
+    // protected $listeners = [
+    //     'Anomaly\Streams\Platform\Entry\Event\EntryWasSaved'   => [
+    //         'Anomaly\SearchModule\Search\Listener\InsertItem',
+    //     ],
+    //     'Anomaly\Streams\Platform\Entry\Event\EntryWasDeleted' => [
+    //         'Anomaly\SearchModule\Search\Listener\DeleteItem',
+    //     ],
+    // ];
 
     /**
      * The addon routes.
@@ -64,7 +47,7 @@ class SearchModuleServiceProvider extends AddonServiceProvider
      */
     protected $routes = [
         'admin/search'         => 'Anomaly\SearchModule\Http\Controller\Admin\SearchController@index',
-        'admin/search/rebuild' => 'Anomaly\SearchModule\Http\Controller\Admin\SearchController@rebuild'
+        'admin/search/rebuild' => 'Anomaly\SearchModule\Http\Controller\Admin\SearchController@rebuild',
     ];
 
     /**
