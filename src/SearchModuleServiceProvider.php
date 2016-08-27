@@ -7,6 +7,7 @@ use Illuminate\Contracts\Config\Repository;
 class SearchModuleServiceProvider extends AddonServiceProvider
 {
 
+    /**
      * The addon plugins.
      *
      * @var array
